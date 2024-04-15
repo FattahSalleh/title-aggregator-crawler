@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wired Headlines</title>
+	</head>
+	<body>
+		<h1>Wired Articles</h1>
+		<ul>
+			{% for article in articles %}
+			<li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
